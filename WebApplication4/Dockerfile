@@ -9,6 +9,7 @@ FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src/WebApplication4
 COPY ["WebApplication4.csproj", "WebApplication4/"]
 RUN dotnet restore "WebApplication4/WebApplication4.csproj"
+WORKDIR /src
 COPY . .
 WORKDIR "/src/WebApplication4"
 RUN dotnet build "WebApplication4.csproj" -c Release -o /app/build
