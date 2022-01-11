@@ -12,6 +12,6 @@ namespace WebApplication4
 
         public string Summary { get; set; }
 
-        public string version { get; set; } = "3";
+        public string version { get; set; } = "4";
     }
 }
