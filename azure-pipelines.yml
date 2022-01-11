@@ -33,6 +33,6 @@ stages:
       displayName: 'Docker image push'
       inputs:
         containerRegistry: dockerHub
-        repository: $(imageName)
+        repository: webapplication4
         command: 'push'
     
