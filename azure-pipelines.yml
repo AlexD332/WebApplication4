@@ -29,3 +29,10 @@ stages:
         buildContext: '$(Build.Repository.LocalPath)'
         tags: |
           $(tag)
+    - task: Docker@2
+      displayName: 'Docker image push'
+      inputs:
+        containerRegistry: 'alexd332'
+        repository: 'webapplication4'
+        command: 'push'
+    
