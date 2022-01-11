@@ -32,7 +32,7 @@ stages:
     - task: Docker@2
       displayName: 'Docker image push'
       inputs:
-        containerRegistry: $(dockerHub)
+        containerRegistry: dockerHub
         repository: $(imageName)
         command: 'push'
     
