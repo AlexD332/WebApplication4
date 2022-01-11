@@ -29,6 +29,5 @@ stages:
         buildContext: '$(Build.Repository.LocalPath)'
         containerRegistry: dockerHub
         repository: alexd332/webapplication4
-        tags: |
-          $(tag)
+        tags: latest
     
