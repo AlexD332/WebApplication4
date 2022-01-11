@@ -28,7 +28,7 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/WebApplication4/Dockerfile'
         buildContext: '$(Build.Repository.LocalPath)'
         containerRegistry: dockerHub
-        repository: webapplication4
+        repository: alexd332/webapplication4
         tags: |
           $(tag)
     
